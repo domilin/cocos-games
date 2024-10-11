@@ -1,0 +1,11 @@
+中英文映射（名字不重复）,中文名,英文
+id,chinese,english
+1,平台配置表,platform
+2,常量主表,main
+3,文本表,language
+4,道具资源表,prop
+5,省份模型表,province_item
+6,关卡模型表,level_item
+7,每日挑战模型表,today_item
+8,挑战模型表,constom_item
+9,牌模型表,card_item

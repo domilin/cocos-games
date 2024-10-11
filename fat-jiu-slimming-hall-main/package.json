@@ -1,0 +1,13 @@
+{
+  "creator": {
+    "version": "3.7.1"
+  },
+  "name": "肥啾瘦身馆_1",
+  "uuid": "2634119f-1562-43ab-972b-6aa369ceb4fb",
+  "version": "3.6.1",
+  "dependencies": {
+    "compressing": "^1.9.0"
+  },
+  "_sourceId": "b4ed0cb8-b2d6-4078-b5e2-f018b7244da2",
+  "_storeId": "ce906353ec5261177b6a3808604959ae"
+}

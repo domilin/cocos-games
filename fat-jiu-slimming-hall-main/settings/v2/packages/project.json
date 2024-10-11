@@ -1,0 +1,52 @@
+{
+  "layer": [
+    {
+      "name": "MY_SCENE",
+      "value": 1
+    }
+  ],
+  "general": {
+    "designResolution": {
+      "height": 1660,
+      "width": 720,
+      "fitHeight": true,
+      "fitWidth": false
+    },
+    "renderPipeline": "fd8ec536-a354-4a17-9c74-4f3883c378c8"
+  },
+  "physics": {
+    "collisionGroups": [
+      {
+        "index": 1,
+        "name": "Player"
+      },
+      {
+        "index": 2,
+        "name": "Enemy"
+      },
+      {
+        "index": 3,
+        "name": "Obstacle"
+      },
+      {
+        "index": 4,
+        "name": "Bullet"
+      },
+      {
+        "index": 5,
+        "name": "EmptyObstacle"
+      }
+    ],
+    "collisionMatrix": {
+      "0": 63,
+      "1": 59,
+      "2": 61,
+      "3": 63,
+      "4": 31,
+      "5": 47
+    },
+    "autoSimulation": true
+  },
+  "__version__": "1.0.4",
+  "custom_joint_texture_layouts": []
+}

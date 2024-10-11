@@ -1,0 +1,22 @@
+平台ID,banner,插屏,原生模版,激励视频,原生模板常驻,appid,每天第一次播放使用,自动刷新无效，手动刷新切换的第二个banner,积木广告,二次刷新积木广告,平台说明
+id,banner,interstitial,nativeTemp,rewardedVideo,nativeTempRoot,appid,rewardedVideoOnce,bannerUpdate,blockOnce,blockOnceUpdate,
+1,adunit-9603004b6a9125e1,adunit-560cb26f60cc7a2a;adunit-742ca62c788250f2,adunit-1312ee8368a9be8b,adunit-c2155c6d6ea8c7f4,,,,,adunit-563d0421244c8bc6,,微信小游戏
+2,04ec2b25ad854e117a35d6b7d076a16f,055608e77df1e15bed45427720e575f7,6f4fe42a295a14e8c2d96c7ebcef5498,0c7449220b94870dce2d314458f0b4e5,,1112299788,,,59345af6cd767fef46abb1e0bf499552,,qq小游戏
+3,,,,1qh38pq820s8dm69a0,,tt3bff4d42a4c3935f02,,,,,头条/抖音小游戏
+4,203cbc6d95684751ba9440634a370d49,d5ebb6653c654391bb9be33ad5d87115,71b9ee0e3f4845f0a528b90f40ecc1d5,48a89d33137d45d58a0f119a3ba84289,fd9bcbb61d29450bab76799d8c9e7b64,,,,,,vivo小游戏
+5,1208502,,1208541,1208554,1208530,,,,,,oppo小游戏
+6,947533312,947533391,,947482418,,,,,,,TapTap平台
+7,w4h3yphikx,l0wedzggm1,,f8dvwrgo1q  ,,108558933,,,,,华为快游戏
+8,5ae7a621d432d13ca7be8201c23b41d7,c2fb8026dac386c67043ae9938c483b3,,ee99a7b9b47adc3a7fed2fa724232f72,,,,,,,小米
+9,8a3c19ae248be93c,5ae4498d290e54a0,,280999b568034411,,,,,,,海外，东南亚
+10,,,,,,,,,,,
+11,,,,,,,,,,,
+12,,ad_bd1dc8e046bdc1cf,,ad_36917dc0c8c8944c,,kwaiv11nv0xif243,,,,,海外快手
+13,,,,,,,,,,,
+14,,2300005008_02,,2300005008_01,,ks701435645020147650,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+9999,,,,,,,,,,,自动获取属于哪个平台
+99,,,,,,,,,,,浏览器平台
+8888,,,,951474837,,,,,,,基础安卓平台（只读）
+8899,,,,947482418,,,,,,,基础ios平台（只读）

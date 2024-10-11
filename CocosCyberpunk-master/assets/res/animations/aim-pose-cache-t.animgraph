@@ -1,0 +1,1339 @@
+[
+  {
+    "__type__": "cc.animation.AnimationGraph",
+    "_name": "",
+    "_objFlags": 0,
+    "_native": "",
+    "_layers": [
+      {
+        "__id__": 1
+      }
+    ],
+    "_variables": {}
+  },
+  {
+    "__type__": "cc.animation.Layer",
+    "_stateMachine": {
+      "__id__": 2
+    },
+    "name": "",
+    "weight": 1,
+    "mask": null,
+    "additive": false,
+    "_stashes": {}
+  },
+  {
+    "__type__": "cc.animation.StateMachine",
+    "__editorExtras__": {
+      "name": "",
+      "id": "16859801939460.09154199869100288",
+      "clone": null,
+      "viewport": {
+        "scale": 1,
+        "top": 0,
+        "left": 0
+      }
+    },
+    "_states": [
+      {
+        "__id__": 3
+      },
+      {
+        "__id__": 4
+      },
+      {
+        "__id__": 5
+      },
+      {
+        "__id__": 6
+      }
+    ],
+    "_transitions": [
+      {
+        "__id__": 109
+      }
+    ],
+    "_entryState": {
+      "__id__": 3
+    },
+    "_exitState": {
+      "__id__": 4
+    },
+    "_anyState": {
+      "__id__": 5
+    }
+  },
+  {
+    "__type__": "cc.animation.State",
+    "__editorExtras__": {
+      "name": "",
+      "id": "16859801939460.27985962676571896",
+      "clone": null,
+      "centerX": -199,
+      "centerY": 0
+    },
+    "name": "Entry"
+  },
+  {
+    "__type__": "cc.animation.State",
+    "__editorExtras__": {
+      "name": "",
+      "id": "16859801939460.7075475332864527",
+      "clone": null,
+      "centerX": 125,
+      "centerY": 0
+    },
+    "name": "Exit"
+  },
+  {
+    "__type__": "cc.animation.State",
+    "__editorExtras__": {
+      "name": "",
+      "id": "16859801939460.18831882006068867",
+      "clone": null,
+      "centerX": 125,
+      "centerY": 0
+    },
+    "name": "Any"
+  },
+  {
+    "__type__": "cc.animation.ProceduralPoseState",
+    "__editorExtras__": {
+      "name": "",
+      "id": "16859801988850.8277022051342184",
+      "clone": null,
+      "centerX": -74,
+      "centerY": -74
+    },
+    "name": "Pose",
+    "graph": {
+      "__id__": 7
+    },
+    "transitionInEventBinding": {
+      "__id__": 107
+    },
+    "transitionOutEventBinding": {
+      "__id__": 108
+    }
+  },
+  {
+    "__type__": "cc.animation.PoseGraph",
+    "__editorExtras__": {
+      "viewport": {
+        "scale": 0.8720000000000008,
+        "top": -85.4879166836427,
+        "left": -108.2799757734203
+      }
+    },
+    "_outputNode": {
+      "__id__": 8
+    },
+    "_nodes": [
+      {
+        "__id__": 8
+      },
+      {
+        "__id__": 9
+      },
+      {
+        "__id__": 21
+      },
+      {
+        "__id__": 26
+      },
+      {
+        "__id__": 27
+      },
+      {
+        "__id__": 56
+      },
+      {
+        "__id__": 84
+      },
+      {
+        "__id__": 89
+      }
+    ],
+    "_shells": [
+      {
+        "__id__": 94
+      },
+      {
+        "__id__": 96
+      },
+      {
+        "__id__": 97
+      },
+      {
+        "__id__": 98
+      },
+      {
+        "__id__": 101
+      },
+      {
+        "__id__": 102
+      },
+      {
+        "__id__": 103
+      },
+      {
+        "__id__": 105
+      }
+    ]
+  },
+  {
+    "__type__": "cc.animation.PoseGraphOutputNode",
+    "__editorExtras__": {
+      "centerX": 244.1474681203274,
+      "centerY": 20.640908254859596
+    },
+    "pose": null
+  },
+  {
+    "__type__": "cc.animation.PoseNodeStateMachine",
+    "__editorExtras__": {
+      "centerX": -430.1915182411115,
+      "centerY": -39.13652416544193
+    },
+    "name": "over",
+    "stateMachine": {
+      "__id__": 10
+    },
+    "emptyStatePose": null
+  },
+  {
+    "__type__": "cc.animation.StateMachine",
+    "__editorExtras__": {
+      "viewport": {
+        "scale": 1,
+        "top": 0,
+        "left": 0
+      }
+    },
+    "_states": [
+      {
+        "__id__": 11
+      },
+      {
+        "__id__": 12
+      },
+      {
+        "__id__": 13
+      },
+      {
+        "__id__": 14
+      }
+    ],
+    "_transitions": [
+      {
+        "__id__": 20
+      }
+    ],
+    "_entryState": {
+      "__id__": 11
+    },
+    "_exitState": {
+      "__id__": 12
+    },
+    "_anyState": {
+      "__id__": 13
+    }
+  },
+  {
+    "__type__": "cc.animation.State",
+    "__editorExtras__": {
+      "name": "",
+      "id": "16859803926660.7003015655052729",
+      "clone": null,
+      "centerX": -125,
+      "centerY": 0
+    },
+    "name": "Entry"
+  },
+  {
+    "__type__": "cc.animation.State",
+    "__editorExtras__": {
+      "name": "",
+      "id": "16859803926670.004945681384147971",
+      "clone": null,
+      "centerX": 125,
+      "centerY": 0
+    },
+    "name": "Exit"
+  },
+  {
+    "__type__": "cc.animation.State",
+    "__editorExtras__": {
+      "name": "",
+      "id": "16859803926670.8789918809328423",
+      "clone": null,
+      "centerX": 125,
+      "centerY": 0
+    },
+    "name": "Any"
+  },
+  {
+    "__type__": "cc.animation.ProceduralPoseState",
+    "__editorExtras__": {
+      "name": "",
+      "id": "16859803952270.000978574160084511",
+      "clone": null,
+      "centerX": -7,
+      "centerY": -85
+    },
+    "name": "Pose",
+    "graph": {
+      "__id__": 15
+    },
+    "transitionInEventBinding": {
+      "__id__": 18
+    },
+    "transitionOutEventBinding": {
+      "__id__": 19
+    }
+  },
+  {
+    "__type__": "cc.animation.PoseGraph",
+    "__editorExtras__": null,
+    "_outputNode": {
+      "__id__": 16
+    },
+    "_nodes": [
+      {
+        "__id__": 16
+      }
+    ],
+    "_shells": [
+      {
+        "__id__": 17
+      }
+    ]
+  },
+  {
+    "__type__": "cc.animation.PoseGraphOutputNode",
+    "__editorExtras__": {
+      "centerX": 0,
+      "centerY": 0
+    },
+    "pose": null
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodeShell",
+    "__editorExtras__": null,
+    "_bindings": []
+  },
+  {
+    "__type__": "cc.animation.AnimationGraphEventBinding",
+    "eventName": ""
+  },
+  {
+    "__type__": "cc.animation.AnimationGraphEventBinding",
+    "eventName": ""
+  },
+  {
+    "__type__": "cc.animation.Transition",
+    "__editorExtras__": null,
+    "from": {
+      "__id__": 11
+    },
+    "to": {
+      "__id__": 14
+    },
+    "conditions": []
+  },
+  {
+    "__type__": "cc.animation.PoseNodeStateMachine",
+    "__editorExtras__": {
+      "centerX": -437.07225218606567,
+      "centerY": -85.00808379846936
+    },
+    "name": "base",
+    "stateMachine": {
+      "__id__": 22
+    },
+    "emptyStatePose": null
+  },
+  {
+    "__type__": "cc.animation.StateMachine",
+    "__editorExtras__": null,
+    "_states": [
+      {
+        "__id__": 23
+      },
+      {
+        "__id__": 24
+      },
+      {
+        "__id__": 25
+      }
+    ],
+    "_transitions": [],
+    "_entryState": {
+      "__id__": 23
+    },
+    "_exitState": {
+      "__id__": 24
+    },
+    "_anyState": {
+      "__id__": 25
+    }
+  },
+  {
+    "__type__": "cc.animation.State",
+    "__editorExtras__": null,
+    "name": "Entry"
+  },
+  {
+    "__type__": "cc.animation.State",
+    "__editorExtras__": null,
+    "name": "Exit"
+  },
+  {
+    "__type__": "cc.animation.State",
+    "__editorExtras__": null,
+    "name": "Any"
+  },
+  {
+    "__type__": "cc.animation.PoseNodeBlendTwoPose",
+    "__editorExtras__": {
+      "centerX": -306.3383072319373,
+      "centerY": -102.2099186608547
+    },
+    "pose0": null,
+    "pose1": null,
+    "ratio": 1
+  },
+  {
+    "__type__": "cc.animation.PoseNodeStateMachine",
+    "__editorExtras__": {
+      "centerX": -273.0814264979922,
+      "centerY": 145.49650335749362
+    },
+    "name": "aim",
+    "stateMachine": {
+      "__id__": 28
+    },
+    "emptyStatePose": null
+  },
+  {
+    "__type__": "cc.animation.StateMachine",
+    "__editorExtras__": {
+      "viewport": {
+        "scale": 1,
+        "top": 0,
+        "left": 0
+      }
+    },
+    "_states": [
+      {
+        "__id__": 29
+      },
+      {
+        "__id__": 30
+      },
+      {
+        "__id__": 31
+      },
+      {
+        "__id__": 32
+      }
+    ],
+    "_transitions": [
+      {
+        "__id__": 55
+      }
+    ],
+    "_entryState": {
+      "__id__": 29
+    },
+    "_exitState": {
+      "__id__": 30
+    },
+    "_anyState": {
+      "__id__": 31
+    }
+  },
+  {
+    "__type__": "cc.animation.State",
+    "__editorExtras__": {
+      "name": "",
+      "id": "16859804802310.7346920209548349",
+      "clone": null,
+      "centerX": -125,
+      "centerY": 0
+    },
+    "name": "Entry"
+  },
+  {
+    "__type__": "cc.animation.State",
+    "__editorExtras__": {
+      "name": "",
+      "id": "16859804802310.9632209887515721",
+      "clone": null,
+      "centerX": 125,
+      "centerY": 0
+    },
+    "name": "Exit"
+  },
+  {
+    "__type__": "cc.animation.State",
+    "__editorExtras__": {
+      "name": "",
+      "id": "16859804802310.5162077912381504",
+      "clone": null,
+      "centerX": 125,
+      "centerY": 0
+    },
+    "name": "Any"
+  },
+  {
+    "__type__": "cc.animation.ProceduralPoseState",
+    "__editorExtras__": {
+      "name": "aim-pose",
+      "id": "16859804846170.7643375029296142",
+      "clone": null,
+      "centerX": -7,
+      "centerY": -77
+    },
+    "name": "aim-pose",
+    "graph": {
+      "__id__": 33
+    },
+    "transitionInEventBinding": {
+      "__id__": 53
+    },
+    "transitionOutEventBinding": {
+      "__id__": 54
+    }
+  },
+  {
+    "__type__": "cc.animation.PoseGraph",
+    "__editorExtras__": null,
+    "_outputNode": {
+      "__id__": 34
+    },
+    "_nodes": [
+      {
+        "__id__": 34
+      },
+      {
+        "__id__": 35
+      },
+      {
+        "__id__": 40
+      },
+      {
+        "__id__": 41
+      }
+    ],
+    "_shells": [
+      {
+        "__id__": 46
+      },
+      {
+        "__id__": 48
+      },
+      {
+        "__id__": 49
+      },
+      {
+        "__id__": 52
+      }
+    ]
+  },
+  {
+    "__type__": "cc.animation.PoseGraphOutputNode",
+    "__editorExtras__": {
+      "centerX": 119,
+      "centerY": -76
+    },
+    "pose": null
+  },
+  {
+    "__type__": "cc.animation.PoseNodeStateMachine",
+    "__editorExtras__": {
+      "centerX": -363,
+      "centerY": -153
+    },
+    "name": "cache-base-over",
+    "stateMachine": {
+      "__id__": 36
+    },
+    "emptyStatePose": null
+  },
+  {
+    "__type__": "cc.animation.StateMachine",
+    "__editorExtras__": null,
+    "_states": [
+      {
+        "__id__": 37
+      },
+      {
+        "__id__": 38
+      },
+      {
+        "__id__": 39
+      }
+    ],
+    "_transitions": [],
+    "_entryState": {
+      "__id__": 37
+    },
+    "_exitState": {
+      "__id__": 38
+    },
+    "_anyState": {
+      "__id__": 39
+    }
+  },
+  {
+    "__type__": "cc.animation.State",
+    "__editorExtras__": null,
+    "name": "Entry"
+  },
+  {
+    "__type__": "cc.animation.State",
+    "__editorExtras__": null,
+    "name": "Exit"
+  },
+  {
+    "__type__": "cc.animation.State",
+    "__editorExtras__": null,
+    "name": "Any"
+  },
+  {
+    "__type__": "cc.animation.PoseNodeBlendTwoPose",
+    "__editorExtras__": {
+      "centerX": -137,
+      "centerY": -166
+    },
+    "pose0": null,
+    "pose1": null,
+    "ratio": 1
+  },
+  {
+    "__type__": "cc.animation.PoseNodeStateMachine",
+    "__editorExtras__": {
+      "centerX": -353,
+      "centerY": -67
+    },
+    "name": "aim-state",
+    "stateMachine": {
+      "__id__": 42
+    },
+    "emptyStatePose": null
+  },
+  {
+    "__type__": "cc.animation.StateMachine",
+    "__editorExtras__": null,
+    "_states": [
+      {
+        "__id__": 43
+      },
+      {
+        "__id__": 44
+      },
+      {
+        "__id__": 45
+      }
+    ],
+    "_transitions": [],
+    "_entryState": {
+      "__id__": 43
+    },
+    "_exitState": {
+      "__id__": 44
+    },
+    "_anyState": {
+      "__id__": 45
+    }
+  },
+  {
+    "__type__": "cc.animation.State",
+    "__editorExtras__": null,
+    "name": "Entry"
+  },
+  {
+    "__type__": "cc.animation.State",
+    "__editorExtras__": null,
+    "name": "Exit"
+  },
+  {
+    "__type__": "cc.animation.State",
+    "__editorExtras__": null,
+    "name": "Any"
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodeShell",
+    "__editorExtras__": null,
+    "_bindings": [
+      {
+        "__id__": 47
+      }
+    ]
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodeInputBinding",
+    "_inputPath": [
+      "pose"
+    ],
+    "_producer": {
+      "__id__": 40
+    },
+    "_outputIndex": 0
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodeShell",
+    "__editorExtras__": null,
+    "_bindings": []
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodeShell",
+    "__editorExtras__": null,
+    "_bindings": [
+      {
+        "__id__": 50
+      },
+      {
+        "__id__": 51
+      }
+    ]
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodeInputBinding",
+    "_inputPath": [
+      "pose0"
+    ],
+    "_producer": {
+      "__id__": 35
+    },
+    "_outputIndex": 0
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodeInputBinding",
+    "_inputPath": [
+      "pose1"
+    ],
+    "_producer": {
+      "__id__": 41
+    },
+    "_outputIndex": 0
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodeShell",
+    "__editorExtras__": null,
+    "_bindings": []
+  },
+  {
+    "__type__": "cc.animation.AnimationGraphEventBinding",
+    "eventName": ""
+  },
+  {
+    "__type__": "cc.animation.AnimationGraphEventBinding",
+    "eventName": ""
+  },
+  {
+    "__type__": "cc.animation.Transition",
+    "__editorExtras__": null,
+    "from": {
+      "__id__": 29
+    },
+    "to": {
+      "__id__": 32
+    },
+    "conditions": []
+  },
+  {
+    "__type__": "cc.animation.PoseNodeStateMachine",
+    "__editorExtras__": {
+      "centerX": 84.7167386396219,
+      "centerY": 20.496503357493793
+    },
+    "name": "foot_ik",
+    "stateMachine": {
+      "__id__": 57
+    },
+    "emptyStatePose": null
+  },
+  {
+    "__type__": "cc.animation.StateMachine",
+    "__editorExtras__": {
+      "viewport": {
+        "scale": 1,
+        "top": 0,
+        "left": 0
+      }
+    },
+    "_states": [
+      {
+        "__id__": 58
+      },
+      {
+        "__id__": 59
+      },
+      {
+        "__id__": 60
+      },
+      {
+        "__id__": 61
+      }
+    ],
+    "_transitions": [
+      {
+        "__id__": 83
+      }
+    ],
+    "_entryState": {
+      "__id__": 58
+    },
+    "_exitState": {
+      "__id__": 59
+    },
+    "_anyState": {
+      "__id__": 60
+    }
+  },
+  {
+    "__type__": "cc.animation.State",
+    "__editorExtras__": {
+      "name": "",
+      "id": "16859805362960.945304478727766",
+      "clone": null,
+      "centerX": -125,
+      "centerY": 0
+    },
+    "name": "Entry"
+  },
+  {
+    "__type__": "cc.animation.State",
+    "__editorExtras__": {
+      "name": "",
+      "id": "16859805362960.5371372382308863",
+      "clone": null,
+      "centerX": 125,
+      "centerY": 0
+    },
+    "name": "Exit"
+  },
+  {
+    "__type__": "cc.animation.State",
+    "__editorExtras__": {
+      "name": "",
+      "id": "16859805362960.5226281870643843",
+      "clone": null,
+      "centerX": 125,
+      "centerY": 0
+    },
+    "name": "Any"
+  },
+  {
+    "__type__": "cc.animation.ProceduralPoseState",
+    "__editorExtras__": {
+      "name": "foot-ik-pose",
+      "id": "16859805400600.8548672006358169",
+      "clone": null,
+      "centerX": 6,
+      "centerY": -75
+    },
+    "name": "foot-ik-pose",
+    "graph": {
+      "__id__": 62
+    },
+    "transitionInEventBinding": {
+      "__id__": 81
+    },
+    "transitionOutEventBinding": {
+      "__id__": 82
+    }
+  },
+  {
+    "__type__": "cc.animation.PoseGraph",
+    "__editorExtras__": null,
+    "_outputNode": {
+      "__id__": 63
+    },
+    "_nodes": [
+      {
+        "__id__": 63
+      },
+      {
+        "__id__": 64
+      },
+      {
+        "__id__": 69
+      },
+      {
+        "__id__": 70
+      },
+      {
+        "__id__": 71
+      }
+    ],
+    "_shells": [
+      {
+        "__id__": 72
+      },
+      {
+        "__id__": 74
+      },
+      {
+        "__id__": 75
+      },
+      {
+        "__id__": 77
+      },
+      {
+        "__id__": 79
+      }
+    ]
+  },
+  {
+    "__type__": "cc.animation.PoseGraphOutputNode",
+    "__editorExtras__": {
+      "centerX": 0,
+      "centerY": 0
+    },
+    "pose": null
+  },
+  {
+    "__type__": "cc.animation.PoseNodeStateMachine",
+    "__editorExtras__": {
+      "centerX": -429,
+      "centerY": -141
+    },
+    "name": "cache-aim-state",
+    "stateMachine": {
+      "__id__": 65
+    },
+    "emptyStatePose": null
+  },
+  {
+    "__type__": "cc.animation.StateMachine",
+    "__editorExtras__": null,
+    "_states": [
+      {
+        "__id__": 66
+      },
+      {
+        "__id__": 67
+      },
+      {
+        "__id__": 68
+      }
+    ],
+    "_transitions": [],
+    "_entryState": {
+      "__id__": 66
+    },
+    "_exitState": {
+      "__id__": 67
+    },
+    "_anyState": {
+      "__id__": 68
+    }
+  },
+  {
+    "__type__": "cc.animation.State",
+    "__editorExtras__": null,
+    "name": "Entry"
+  },
+  {
+    "__type__": "cc.animation.State",
+    "__editorExtras__": null,
+    "name": "Exit"
+  },
+  {
+    "__type__": "cc.animation.State",
+    "__editorExtras__": null,
+    "name": "Any"
+  },
+  {
+    "__type__": "cc.animation.PoseNodeCopyTransform",
+    "__editorExtras__": {
+      "centerX": -222,
+      "centerY": -157
+    },
+    "pose": null,
+    "sourceNodeName": "",
+    "targetNodeName": "",
+    "space": 1
+  },
+  {
+    "__type__": "cc.animation.PoseNodeCopyTransform",
+    "__editorExtras__": {
+      "centerX": -225,
+      "centerY": -81
+    },
+    "pose": null,
+    "sourceNodeName": "",
+    "targetNodeName": "",
+    "space": 1
+  },
+  {
+    "__type__": "cc.animation.PoseNodeCopyTransform",
+    "__editorExtras__": {
+      "centerX": -221,
+      "centerY": -5
+    },
+    "pose": null,
+    "sourceNodeName": "",
+    "targetNodeName": "",
+    "space": 1
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodeShell",
+    "__editorExtras__": null,
+    "_bindings": [
+      {
+        "__id__": 73
+      }
+    ]
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodeInputBinding",
+    "_inputPath": [
+      "pose"
+    ],
+    "_producer": {
+      "__id__": 71
+    },
+    "_outputIndex": 0
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodeShell",
+    "__editorExtras__": null,
+    "_bindings": []
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodeShell",
+    "__editorExtras__": null,
+    "_bindings": [
+      {
+        "__id__": 76
+      }
+    ]
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodeInputBinding",
+    "_inputPath": [
+      "pose"
+    ],
+    "_producer": {
+      "__id__": 64
+    },
+    "_outputIndex": 0
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodeShell",
+    "__editorExtras__": null,
+    "_bindings": [
+      {
+        "__id__": 78
+      }
+    ]
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodeInputBinding",
+    "_inputPath": [
+      "pose"
+    ],
+    "_producer": {
+      "__id__": 69
+    },
+    "_outputIndex": 0
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodeShell",
+    "__editorExtras__": null,
+    "_bindings": [
+      {
+        "__id__": 80
+      }
+    ]
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodeInputBinding",
+    "_inputPath": [
+      "pose"
+    ],
+    "_producer": {
+      "__id__": 70
+    },
+    "_outputIndex": 0
+  },
+  {
+    "__type__": "cc.animation.AnimationGraphEventBinding",
+    "eventName": ""
+  },
+  {
+    "__type__": "cc.animation.AnimationGraphEventBinding",
+    "eventName": ""
+  },
+  {
+    "__type__": "cc.animation.Transition",
+    "__editorExtras__": null,
+    "from": {
+      "__id__": 58
+    },
+    "to": {
+      "__id__": 61
+    },
+    "conditions": []
+  },
+  {
+    "__type__": "cc.animation.PoseNodeStateMachine",
+    "__editorExtras__": {
+      "centerX": -128.58601365395577,
+      "centerY": -81.56771682599233
+    },
+    "name": "cache-base-over",
+    "stateMachine": {
+      "__id__": 85
+    },
+    "emptyStatePose": null
+  },
+  {
+    "__type__": "cc.animation.StateMachine",
+    "__editorExtras__": {
+      "viewport": {
+        "scale": 1,
+        "top": 0,
+        "left": 0
+      }
+    },
+    "_states": [
+      {
+        "__id__": 86
+      },
+      {
+        "__id__": 87
+      },
+      {
+        "__id__": 88
+      }
+    ],
+    "_transitions": [],
+    "_entryState": {
+      "__id__": 86
+    },
+    "_exitState": {
+      "__id__": 87
+    },
+    "_anyState": {
+      "__id__": 88
+    }
+  },
+  {
+    "__type__": "cc.animation.State",
+    "__editorExtras__": {
+      "name": "",
+      "id": "16859809266200.7754698514899647",
+      "clone": null,
+      "centerX": -125,
+      "centerY": 0
+    },
+    "name": "Entry"
+  },
+  {
+    "__type__": "cc.animation.State",
+    "__editorExtras__": {
+      "name": "",
+      "id": "16859809266210.6248951571261436",
+      "clone": null,
+      "centerX": 125,
+      "centerY": 0
+    },
+    "name": "Exit"
+  },
+  {
+    "__type__": "cc.animation.State",
+    "__editorExtras__": {
+      "name": "",
+      "id": "16859809266210.005245607426289878",
+      "clone": null,
+      "centerX": 125,
+      "centerY": 0
+    },
+    "name": "Any"
+  },
+  {
+    "__type__": "cc.animation.PoseNodeStateMachine",
+    "__editorExtras__": {
+      "centerX": -122.85206869982738,
+      "centerY": 139.7625584033653
+    },
+    "name": "cache-aim",
+    "stateMachine": {
+      "__id__": 90
+    },
+    "emptyStatePose": null
+  },
+  {
+    "__type__": "cc.animation.StateMachine",
+    "__editorExtras__": null,
+    "_states": [
+      {
+        "__id__": 91
+      },
+      {
+        "__id__": 92
+      },
+      {
+        "__id__": 93
+      }
+    ],
+    "_transitions": [],
+    "_entryState": {
+      "__id__": 91
+    },
+    "_exitState": {
+      "__id__": 92
+    },
+    "_anyState": {
+      "__id__": 93
+    }
+  },
+  {
+    "__type__": "cc.animation.State",
+    "__editorExtras__": null,
+    "name": "Entry"
+  },
+  {
+    "__type__": "cc.animation.State",
+    "__editorExtras__": null,
+    "name": "Exit"
+  },
+  {
+    "__type__": "cc.animation.State",
+    "__editorExtras__": null,
+    "name": "Any"
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodeShell",
+    "__editorExtras__": null,
+    "_bindings": [
+      {
+        "__id__": 95
+      }
+    ]
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodeInputBinding",
+    "_inputPath": [
+      "pose"
+    ],
+    "_producer": {
+      "__id__": 56
+    },
+    "_outputIndex": 0
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodeShell",
+    "__editorExtras__": null,
+    "_bindings": []
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodeShell",
+    "__editorExtras__": null,
+    "_bindings": []
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodeShell",
+    "__editorExtras__": null,
+    "_bindings": [
+      {
+        "__id__": 99
+      },
+      {
+        "__id__": 100
+      }
+    ]
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodeInputBinding",
+    "_inputPath": [
+      "pose0"
+    ],
+    "_producer": {
+      "__id__": 21
+    },
+    "_outputIndex": 0
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodeInputBinding",
+    "_inputPath": [
+      "pose1"
+    ],
+    "_producer": {
+      "__id__": 9
+    },
+    "_outputIndex": 0
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodeShell",
+    "__editorExtras__": null,
+    "_bindings": []
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodeShell",
+    "__editorExtras__": null,
+    "_bindings": []
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodeShell",
+    "__editorExtras__": null,
+    "_bindings": [
+      {
+        "__id__": 104
+      }
+    ]
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodeInputBinding",
+    "_inputPath": [
+      "emptyStatePose"
+    ],
+    "_producer": {
+      "__id__": 26
+    },
+    "_outputIndex": 0
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodeShell",
+    "__editorExtras__": null,
+    "_bindings": [
+      {
+        "__id__": 106
+      }
+    ]
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodeInputBinding",
+    "_inputPath": [
+      "emptyStatePose"
+    ],
+    "_producer": {
+      "__id__": 27
+    },
+    "_outputIndex": 0
+  },
+  {
+    "__type__": "cc.animation.AnimationGraphEventBinding",
+    "eventName": ""
+  },
+  {
+    "__type__": "cc.animation.AnimationGraphEventBinding",
+    "eventName": ""
+  },
+  {
+    "__type__": "cc.animation.Transition",
+    "__editorExtras__": null,
+    "from": {
+      "__id__": 3
+    },
+    "to": {
+      "__id__": 6
+    },
+    "conditions": []
+  }
+]

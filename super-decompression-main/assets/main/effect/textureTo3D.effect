@@ -1,0 +1,56 @@
+
+
+
+CCEffect %{
+    techniques:
+    - name: opaque
+      passes:
+      - vert: bonus-unlit-vs:vert
+        frag: bonus-unlit-fs:frag
+        properties: &props
+          mainTexture:  { value: grey         }    
+  }%
+  
+  CCProgram bonus-unlit-vs %{
+    precision mediump float;
+    #include <builtin/uniforms/cc-global>
+    #include <legacy/decode-base>
+    #include <legacy/local-batch>
+    #include <legacy/input>
+  
+    out vec2 v_uv;
+
+    highp vec4 vert () {
+      vec4 position;
+      CCVertInput(position);
+  
+      mat4 matWorld;
+      CCGetWorldMatrix(matWorld);
+  
+      highp vec4 pos = cc_matViewProj * matWorld * position;
+  
+      v_uv = a_texCoord;
+  
+      return pos;
+    }
+  }%
+  
+  CCProgram bonus-unlit-fs %{
+    precision mediump float;
+    #include <legacy/output>
+  
+    in vec2 v_uv;
+    uniform sampler2D mainTexture;
+
+    vec4 frag () {
+      vec4 o = vec4(1, 1, 1, 1);
+  
+      o *= texture(mainTexture, v_uv);
+
+      if (o.a == 0.0)
+        discard;
+  
+      return CCFragOutput(o);
+    }
+  }%
+  

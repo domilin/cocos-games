@@ -1,0 +1,173 @@
+{
+  "splash-setting": {
+    "totalTime": 0,
+    "displayRatio": 0,
+    "watermarkLocation": "default",
+    "logo": {
+      "type": "none",
+      "image": "project://assets/main/texture/ui/preload/default_sprite_splash.png"
+    },
+    "background": {
+      "type": "custom",
+      "image": "project://settings/start_bg.jpg"
+    }
+  },
+  "textureCompressConfig": {
+    "userPreset": {
+      "3cO/NvcI9CB5VEh7mZfn9p": {
+        "name": "png",
+        "options": {
+          "web": {
+            "png": {
+              "quality": 100
+            }
+          },
+          "miniGame": {
+            "png": {
+              "quality": 80
+            }
+          },
+          "android": {
+            "png": {
+              "quality": 100
+            }
+          },
+          "ios": {
+            "png": {
+              "quality": 80
+            }
+          }
+        }
+      },
+      "e4LKC/I2NA66bREpawSGFi": {
+        "name": "jpg",
+        "options": {
+          "miniGame": {
+            "jpg": {
+              "quality": 100
+            }
+          },
+          "web": {},
+          "android": {
+            "jpg": {
+              "quality": 100
+            }
+          }
+        }
+      }
+    },
+    "genMipmaps": false
+  },
+  "__version__": "1.3.7",
+  "bundleConfig": {
+    "custom": {
+      "auto_dehO/j87RPAZzII/l1wSCq": {
+        "displayName": "分包",
+        "configs": {
+          "native": {
+            "preferredOptions": {
+              "compressionType": "merge_all_json",
+              "isRemote": false
+            }
+          },
+          "miniGame": {
+            "configMode": "overwrite",
+            "overwriteSettings": {
+              "alipay-mini-game": {
+                "compressionType": "merge_dep",
+                "isRemote": false
+              },
+              "taobao-creative-app": {
+                "compressionType": "merge_dep",
+                "isRemote": false
+              },
+              "taobao-mini-game": {
+                "compressionType": "merge_dep",
+                "isRemote": false
+              },
+              "bytedance-mini-game": {
+                "compressionType": "merge_dep",
+                "isRemote": false
+              },
+              "huawei-quick-game": {
+                "compressionType": "merge_dep",
+                "isRemote": false
+              },
+              "xiaomi-quick-game": {
+                "compressionType": "merge_dep",
+                "isRemote": false
+              },
+              "baidu-mini-game": {
+                "compressionType": "merge_dep",
+                "isRemote": false
+              },
+              "link-sure": {
+                "compressionType": "merge_dep",
+                "isRemote": false
+              },
+              "qtt": {
+                "compressionType": "merge_dep",
+                "isRemote": false
+              },
+              "cocos-play": {
+                "compressionType": "merge_dep",
+                "isRemote": false
+              },
+              "oppo-mini-game": {
+                "compressionType": "subpackage",
+                "isRemote": false
+              },
+              "vivo-mini-game": {
+                "compressionType": "subpackage",
+                "isRemote": false
+              },
+              "wechatgame": {
+                "compressionType": "subpackage",
+                "isRemote": false
+              }
+            }
+          },
+          "web": {
+            "preferredOptions": {
+              "compressionType": "merge_all_json",
+              "isRemote": false
+            },
+            "overwriteSettings": {}
+          }
+        }
+      },
+      "f8O8ctPBBMEL+qR5N0DvmF": {
+        "displayName": "主包",
+        "configs": {
+          "native": {
+            "preferredOptions": {
+              "isRemote": false,
+              "compressionType": "merge_all_json"
+            }
+          },
+          "web": {
+            "preferredOptions": {
+              "isRemote": false,
+              "compressionType": "merge_all_json"
+            },
+            "fallbackOptions": {
+              "compressionType": "merge_dep"
+            }
+          },
+          "miniGame": {
+            "fallbackOptions": {
+              "isRemote": false,
+              "compressionType": "merge_all_json"
+            },
+            "configMode": "fallback",
+            "overwriteSettings": {
+              "wechatgame": {
+                "compressionType": "subpackage"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

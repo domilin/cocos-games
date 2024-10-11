@@ -1,0 +1,1 @@
+[{"id": 1, "typeson": 1, "typename": "累计充值", "lockType": 1, "openDialog": "d2prefabUI|shopLayer/TotalRechargeDialog"}, {"id": 2, "typeson": 1, "typename": "特惠活动", "lockType": 2, "openDialog": "d2prefabUI|shopLayer/SaleDailyDialog"}, {"id": 3, "typeson": 2, "typename": "累天充值", "lockType": 1, "openDialog": "d2prefabUI|shopLayer/TotalRechargeDialog"}]

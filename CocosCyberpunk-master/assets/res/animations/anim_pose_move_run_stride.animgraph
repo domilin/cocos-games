@@ -1,0 +1,2428 @@
+[
+  {
+    "__type__": "cc.animation.AnimationGraph",
+    "_name": "",
+    "_objFlags": 0,
+    "_native": "",
+    "_layers": [
+      {
+        "__id__": 1
+      }
+    ],
+    "_variables": {
+      "walk_run": {
+        "__id__": 199
+      },
+      "stride": {
+        "__id__": 200
+      },
+      "move_f": {
+        "__id__": 201
+      },
+      "move_rf": {
+        "__id__": 202
+      },
+      "move_lf": {
+        "__id__": 203
+      },
+      "move_b": {
+        "__id__": 204
+      },
+      "move_rb": {
+        "__id__": 205
+      },
+      "move_lb": {
+        "__id__": 206
+      },
+      "is_jump": {
+        "__id__": 207
+      }
+    }
+  },
+  {
+    "__type__": "cc.animation.Layer",
+    "_stateMachine": {
+      "__id__": 2
+    },
+    "name": "base",
+    "weight": 1,
+    "mask": null,
+    "additive": false,
+    "_stashes": {
+      "walk_run_rf": {
+        "__id__": 29
+      },
+      "walk_run_lf": {
+        "__id__": 48
+      },
+      "walk_run_b": {
+        "__id__": 67
+      },
+      "walk_run_rb": {
+        "__id__": 86
+      },
+      "walk_run_lb": {
+        "__id__": 105
+      },
+      "walk_run_f": {
+        "__id__": 124
+      },
+      "walk_run": {
+        "__id__": 156
+      }
+    }
+  },
+  {
+    "__type__": "cc.animation.StateMachine",
+    "__editorExtras__": {
+      "name": "",
+      "id": "16854161787480.4765491540864242",
+      "clone": null,
+      "viewport": {
+        "scale": 1,
+        "top": 0,
+        "left": 0
+      }
+    },
+    "_states": [
+      {
+        "__id__": 3
+      },
+      {
+        "__id__": 4
+      },
+      {
+        "__id__": 5
+      },
+      {
+        "__id__": 6
+      },
+      {
+        "__id__": 15
+      }
+    ],
+    "_transitions": [
+      {
+        "__id__": 21
+      },
+      {
+        "__id__": 22
+      },
+      {
+        "__id__": 26
+      }
+    ],
+    "_entryState": {
+      "__id__": 3
+    },
+    "_exitState": {
+      "__id__": 4
+    },
+    "_anyState": {
+      "__id__": 5
+    }
+  },
+  {
+    "__type__": "cc.animation.State",
+    "__editorExtras__": {
+      "name": "",
+      "id": "16854161787480.9430260357482365",
+      "clone": null,
+      "centerX": -334,
+      "centerY": -20
+    },
+    "name": "Entry"
+  },
+  {
+    "__type__": "cc.animation.State",
+    "__editorExtras__": {
+      "name": "",
+      "id": "16854161787480.04937285381117862",
+      "clone": null,
+      "centerX": 125,
+      "centerY": 0
+    },
+    "name": "Exit"
+  },
+  {
+    "__type__": "cc.animation.State",
+    "__editorExtras__": {
+      "name": "",
+      "id": "16854161787480.9122133349578314",
+      "clone": null,
+      "centerX": 125,
+      "centerY": 0
+    },
+    "name": "Any"
+  },
+  {
+    "__type__": "cc.animation.ProceduralPoseState",
+    "__editorExtras__": {
+      "name": "move_pose",
+      "id": "16854167650730.3926163749682956",
+      "clone": null,
+      "centerX": -193,
+      "centerY": -157.5
+    },
+    "name": "move_pose",
+    "graph": {
+      "__id__": 7
+    },
+    "transitionInEventBinding": {
+      "__id__": 13
+    },
+    "transitionOutEventBinding": {
+      "__id__": 14
+    }
+  },
+  {
+    "__type__": "cc.animation.PoseGraph",
+    "__editorExtras__": null,
+    "_outputNode": {
+      "__id__": 8
+    },
+    "_nodes": [
+      {
+        "__id__": 8
+      },
+      {
+        "__id__": 9
+      }
+    ],
+    "_shells": [
+      {
+        "__id__": 10
+      },
+      {
+        "__id__": 12
+      }
+    ]
+  },
+  {
+    "__type__": "cc.animation.PoseGraphOutputNode",
+    "__editorExtras__": {
+      "centerX": 0,
+      "centerY": 0
+    },
+    "pose": null
+  },
+  {
+    "__type__": "cc.animation.PoseNodeUseStashedPose",
+    "__editorExtras__": {
+      "centerX": -303.5,
+      "centerY": -14
+    },
+    "stashName": "walk_run"
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodeShell",
+    "__editorExtras__": null,
+    "_bindings": [
+      {
+        "__id__": 11
+      }
+    ]
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodeInputBinding",
+    "_inputPath": [
+      "pose"
+    ],
+    "_producer": {
+      "__id__": 9
+    },
+    "_outputIndex": 0
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodeShell",
+    "__editorExtras__": null,
+    "_bindings": []
+  },
+  {
+    "__type__": "cc.animation.AnimationGraphEventBinding",
+    "eventName": ""
+  },
+  {
+    "__type__": "cc.animation.AnimationGraphEventBinding",
+    "eventName": ""
+  },
+  {
+    "__type__": "cc.animation.ProceduralPoseState",
+    "__editorExtras__": {
+      "name": "jump_pose",
+      "id": "16854373709920.11589293132849998",
+      "clone": null,
+      "centerX": 81.5,
+      "centerY": -159
+    },
+    "name": "jump_pose",
+    "graph": {
+      "__id__": 16
+    },
+    "transitionInEventBinding": {
+      "__id__": 19
+    },
+    "transitionOutEventBinding": {
+      "__id__": 20
+    }
+  },
+  {
+    "__type__": "cc.animation.PoseGraph",
+    "__editorExtras__": null,
+    "_outputNode": {
+      "__id__": 17
+    },
+    "_nodes": [
+      {
+        "__id__": 17
+      }
+    ],
+    "_shells": [
+      {
+        "__id__": 18
+      }
+    ]
+  },
+  {
+    "__type__": "cc.animation.PoseGraphOutputNode",
+    "__editorExtras__": {
+      "centerX": 0,
+      "centerY": 0
+    },
+    "pose": null
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodeShell",
+    "__editorExtras__": null,
+    "_bindings": []
+  },
+  {
+    "__type__": "cc.animation.AnimationGraphEventBinding",
+    "eventName": ""
+  },
+  {
+    "__type__": "cc.animation.AnimationGraphEventBinding",
+    "eventName": ""
+  },
+  {
+    "__type__": "cc.animation.Transition",
+    "__editorExtras__": null,
+    "from": {
+      "__id__": 3
+    },
+    "to": {
+      "__id__": 6
+    },
+    "conditions": []
+  },
+  {
+    "__type__": "cc.animation.ProceduralPoseTransition",
+    "__editorExtras__": null,
+    "from": {
+      "__id__": 6
+    },
+    "to": {
+      "__id__": 15
+    },
+    "conditions": [
+      {
+        "__id__": 23
+      }
+    ],
+    "destinationStart": 0,
+    "relativeDestinationStart": false,
+    "startEventBinding": {
+      "__id__": 24
+    },
+    "endEventBinding": {
+      "__id__": 25
+    },
+    "duration": 0.3
+  },
+  {
+    "__type__": "cc.animation.TriggerCondition",
+    "trigger": "is_jump"
+  },
+  {
+    "__type__": "cc.animation.AnimationGraphEventBinding",
+    "eventName": ""
+  },
+  {
+    "__type__": "cc.animation.AnimationGraphEventBinding",
+    "eventName": ""
+  },
+  {
+    "__type__": "cc.animation.ProceduralPoseTransition",
+    "__editorExtras__": null,
+    "from": {
+      "__id__": 15
+    },
+    "to": {
+      "__id__": 6
+    },
+    "conditions": [],
+    "destinationStart": 0,
+    "relativeDestinationStart": false,
+    "startEventBinding": {
+      "__id__": 27
+    },
+    "endEventBinding": {
+      "__id__": 28
+    },
+    "duration": 0.3
+  },
+  {
+    "__type__": "cc.animation.AnimationGraphEventBinding",
+    "eventName": ""
+  },
+  {
+    "__type__": "cc.animation.AnimationGraphEventBinding",
+    "eventName": ""
+  },
+  {
+    "__type__": "cc.animation.PoseGraphStash",
+    "__editorExtras__": null,
+    "graph": {
+      "__id__": 30
+    }
+  },
+  {
+    "__type__": "cc.animation.PoseGraph",
+    "__editorExtras__": null,
+    "_outputNode": {
+      "__id__": 31
+    },
+    "_nodes": [
+      {
+        "__id__": 31
+      },
+      {
+        "__id__": 32
+      }
+    ],
+    "_shells": [
+      {
+        "__id__": 45
+      },
+      {
+        "__id__": 47
+      }
+    ]
+  },
+  {
+    "__type__": "cc.animation.PoseGraphOutputNode",
+    "__editorExtras__": {
+      "centerX": 0,
+      "centerY": 0
+    },
+    "pose": null
+  },
+  {
+    "__type__": "cc.animation.PoseNodePlayMotion",
+    "__editorExtras__": {
+      "centerX": -291.5,
+      "centerY": -106
+    },
+    "motion": {
+      "__id__": 33
+    },
+    "syncInfo": {
+      "__id__": 44
+    },
+    "speedMultiplier": 1
+  },
+  {
+    "__type__": "cc.animation.AnimationBlend2D",
+    "__editorExtras__": {
+      "name": "",
+      "id": "16854332329880.1354364138530899",
+      "clone": null,
+      "centerX": -36,
+      "centerY": -41
+    },
+    "name": "",
+    "_items": [
+      {
+        "__id__": 34
+      },
+      {
+        "__id__": 36
+      },
+      {
+        "__id__": 38
+      },
+      {
+        "__id__": 40
+      }
+    ],
+    "paramX": {
+      "__id__": 42
+    },
+    "paramY": {
+      "__id__": 43
+    },
+    "_algorithm": 0
+  },
+  {
+    "__type__": "cc.animation.AnimationBlend2DItem",
+    "motion": {
+      "__id__": 35
+    },
+    "threshold": {
+      "__type__": "cc.Vec2",
+      "x": 1,
+      "y": 0
+    }
+  },
+  {
+    "__type__": "cc.animation.ClipMotion",
+    "__editorExtras__": {
+      "name": "",
+      "id": "16854332583750.6309640894488675",
+      "clone": null,
+      "centerX": -242.5,
+      "centerY": -130
+    },
+    "clip": {
+      "__uuid__": "662b3321-871f-48ca-a610-6f6dcc66c208@f7f8a",
+      "__expectedType__": "cc.AnimationClip"
+    }
+  },
+  {
+    "__type__": "cc.animation.AnimationBlend2DItem",
+    "motion": {
+      "__id__": 37
+    },
+    "threshold": {
+      "__type__": "cc.Vec2",
+      "x": 1,
+      "y": 1
+    }
+  },
+  {
+    "__type__": "cc.animation.ClipMotion",
+    "__editorExtras__": {
+      "name": "",
+      "id": "16854332751460.739012151029889",
+      "clone": null,
+      "centerX": -254.5,
+      "centerY": 46
+    },
+    "clip": {
+      "__uuid__": "d3bb09f5-b3e7-44e8-95a9-02cc61163d0a@cd503",
+      "__expectedType__": "cc.AnimationClip"
+    }
+  },
+  {
+    "__type__": "cc.animation.AnimationBlend2DItem",
+    "motion": {
+      "__id__": 39
+    },
+    "threshold": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 1
+    }
+  },
+  {
+    "__type__": "cc.animation.ClipMotion",
+    "__editorExtras__": {
+      "name": "",
+      "id": "16854333271350.6605360161954061",
+      "clone": null,
+      "centerX": 177.5,
+      "centerY": 101
+    },
+    "clip": {
+      "__uuid__": "80914c46-711a-42f2-9152-4515423abd55@e8b29",
+      "__expectedType__": "cc.AnimationClip"
+    }
+  },
+  {
+    "__type__": "cc.animation.AnimationBlend2DItem",
+    "motion": {
+      "__id__": 41
+    },
+    "threshold": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    }
+  },
+  {
+    "__type__": "cc.animation.ClipMotion",
+    "__editorExtras__": {
+      "name": "",
+      "id": "16854333404890.8050157847511383",
+      "clone": null,
+      "centerX": 179.5,
+      "centerY": -134
+    },
+    "clip": {
+      "__uuid__": "d3757e2f-1164-4359-96aa-d0b9553c71f5@2848b",
+      "__expectedType__": "cc.AnimationClip"
+    }
+  },
+  {
+    "__type__": "cc.animation.BindableNumber",
+    "variable": "walk_run",
+    "value": 0
+  },
+  {
+    "__type__": "cc.animation.BindableNumber",
+    "variable": "stride",
+    "value": 0
+  },
+  {
+    "__type__": "cc.animation.MotionSyncInfo",
+    "group": ""
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodeShell",
+    "__editorExtras__": null,
+    "_bindings": [
+      {
+        "__id__": 46
+      }
+    ]
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodeInputBinding",
+    "_inputPath": [
+      "pose"
+    ],
+    "_producer": {
+      "__id__": 32
+    },
+    "_outputIndex": 0
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodeShell",
+    "__editorExtras__": null,
+    "_bindings": []
+  },
+  {
+    "__type__": "cc.animation.PoseGraphStash",
+    "__editorExtras__": null,
+    "graph": {
+      "__id__": 49
+    }
+  },
+  {
+    "__type__": "cc.animation.PoseGraph",
+    "__editorExtras__": null,
+    "_outputNode": {
+      "__id__": 50
+    },
+    "_nodes": [
+      {
+        "__id__": 50
+      },
+      {
+        "__id__": 51
+      }
+    ],
+    "_shells": [
+      {
+        "__id__": 64
+      },
+      {
+        "__id__": 66
+      }
+    ]
+  },
+  {
+    "__type__": "cc.animation.PoseGraphOutputNode",
+    "__editorExtras__": {
+      "centerX": 32,
+      "centerY": -20
+    },
+    "pose": null
+  },
+  {
+    "__type__": "cc.animation.PoseNodePlayMotion",
+    "__editorExtras__": {
+      "centerX": -254.5,
+      "centerY": -136
+    },
+    "motion": {
+      "__id__": 52
+    },
+    "syncInfo": {
+      "__id__": 63
+    },
+    "speedMultiplier": 1
+  },
+  {
+    "__type__": "cc.animation.AnimationBlend2D",
+    "__editorExtras__": {
+      "name": "",
+      "id": "16854341949280.24896065551491975",
+      "clone": null,
+      "centerX": -28,
+      "centerY": -16
+    },
+    "name": "",
+    "_items": [
+      {
+        "__id__": 53
+      },
+      {
+        "__id__": 55
+      },
+      {
+        "__id__": 57
+      },
+      {
+        "__id__": 59
+      }
+    ],
+    "paramX": {
+      "__id__": 61
+    },
+    "paramY": {
+      "__id__": 62
+    },
+    "_algorithm": 0
+  },
+  {
+    "__type__": "cc.animation.AnimationBlend2DItem",
+    "motion": {
+      "__id__": 54
+    },
+    "threshold": {
+      "__type__": "cc.Vec2",
+      "x": 1,
+      "y": 0
+    }
+  },
+  {
+    "__type__": "cc.animation.ClipMotion",
+    "__editorExtras__": {
+      "name": "",
+      "id": "16854342119820.1633748824187251",
+      "clone": null,
+      "centerX": -176.5,
+      "centerY": -119
+    },
+    "clip": {
+      "__uuid__": "5162db43-b68c-44b8-ba63-40e7a4788086@f3131",
+      "__expectedType__": "cc.AnimationClip"
+    }
+  },
+  {
+    "__type__": "cc.animation.AnimationBlend2DItem",
+    "motion": {
+      "__id__": 56
+    },
+    "threshold": {
+      "__type__": "cc.Vec2",
+      "x": 1,
+      "y": 1
+    }
+  },
+  {
+    "__type__": "cc.animation.ClipMotion",
+    "__editorExtras__": {
+      "name": "",
+      "id": "16854342189380.7718517575141675",
+      "clone": null,
+      "centerX": -197.5,
+      "centerY": 70
+    },
+    "clip": {
+      "__uuid__": "2142ad6f-0036-48e1-9f8b-c9eda7effb33@651c8",
+      "__expectedType__": "cc.AnimationClip"
+    }
+  },
+  {
+    "__type__": "cc.animation.AnimationBlend2DItem",
+    "motion": {
+      "__id__": 58
+    },
+    "threshold": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 1
+    }
+  },
+  {
+    "__type__": "cc.animation.ClipMotion",
+    "__editorExtras__": {
+      "name": "",
+      "id": "16854342538070.2906786977025695",
+      "clone": null,
+      "centerX": 138.5,
+      "centerY": 125
+    },
+    "clip": {
+      "__uuid__": "808f31c3-855c-47a9-af63-fccd41cc186c@624ab",
+      "__expectedType__": "cc.AnimationClip"
+    }
+  },
+  {
+    "__type__": "cc.animation.AnimationBlend2DItem",
+    "motion": {
+      "__id__": 60
+    },
+    "threshold": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    }
+  },
+  {
+    "__type__": "cc.animation.ClipMotion",
+    "__editorExtras__": {
+      "name": "",
+      "id": "16854342588880.9222521055072104",
+      "clone": null,
+      "centerX": 125.5,
+      "centerY": -110
+    },
+    "clip": {
+      "__uuid__": "a96afded-f083-4260-819c-e666f17f9ff6@5d49f",
+      "__expectedType__": "cc.AnimationClip"
+    }
+  },
+  {
+    "__type__": "cc.animation.BindableNumber",
+    "variable": "walk_run",
+    "value": 0
+  },
+  {
+    "__type__": "cc.animation.BindableNumber",
+    "variable": "stride",
+    "value": 0
+  },
+  {
+    "__type__": "cc.animation.MotionSyncInfo",
+    "group": ""
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodeShell",
+    "__editorExtras__": null,
+    "_bindings": [
+      {
+        "__id__": 65
+      }
+    ]
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodeInputBinding",
+    "_inputPath": [
+      "pose"
+    ],
+    "_producer": {
+      "__id__": 51
+    },
+    "_outputIndex": 0
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodeShell",
+    "__editorExtras__": null,
+    "_bindings": []
+  },
+  {
+    "__type__": "cc.animation.PoseGraphStash",
+    "__editorExtras__": null,
+    "graph": {
+      "__id__": 68
+    }
+  },
+  {
+    "__type__": "cc.animation.PoseGraph",
+    "__editorExtras__": null,
+    "_outputNode": {
+      "__id__": 69
+    },
+    "_nodes": [
+      {
+        "__id__": 69
+      },
+      {
+        "__id__": 70
+      }
+    ],
+    "_shells": [
+      {
+        "__id__": 83
+      },
+      {
+        "__id__": 85
+      }
+    ]
+  },
+  {
+    "__type__": "cc.animation.PoseGraphOutputNode",
+    "__editorExtras__": {
+      "centerX": 0,
+      "centerY": 0
+    },
+    "pose": null
+  },
+  {
+    "__type__": "cc.animation.PoseNodePlayMotion",
+    "__editorExtras__": {
+      "centerX": -282.5,
+      "centerY": -168
+    },
+    "motion": {
+      "__id__": 71
+    },
+    "syncInfo": {
+      "__id__": 82
+    },
+    "speedMultiplier": 1
+  },
+  {
+    "__type__": "cc.animation.AnimationBlend2D",
+    "__editorExtras__": {
+      "name": "",
+      "id": "16854343525610.7816058911382435",
+      "clone": null,
+      "centerX": -9,
+      "centerY": -14
+    },
+    "name": "",
+    "_items": [
+      {
+        "__id__": 72
+      },
+      {
+        "__id__": 74
+      },
+      {
+        "__id__": 76
+      },
+      {
+        "__id__": 78
+      }
+    ],
+    "paramX": {
+      "__id__": 80
+    },
+    "paramY": {
+      "__id__": 81
+    },
+    "_algorithm": 0
+  },
+  {
+    "__type__": "cc.animation.AnimationBlend2DItem",
+    "motion": {
+      "__id__": 73
+    },
+    "threshold": {
+      "__type__": "cc.Vec2",
+      "x": 1,
+      "y": 1
+    }
+  },
+  {
+    "__type__": "cc.animation.ClipMotion",
+    "__editorExtras__": {
+      "name": "",
+      "id": "16854343752460.04606642563331631",
+      "clone": null,
+      "centerX": -218.5,
+      "centerY": -84
+    },
+    "clip": {
+      "__uuid__": "ebd9418d-12ea-4741-9824-279115568bec@83e10",
+      "__expectedType__": "cc.AnimationClip"
+    }
+  },
+  {
+    "__type__": "cc.animation.AnimationBlend2DItem",
+    "motion": {
+      "__id__": 75
+    },
+    "threshold": {
+      "__type__": "cc.Vec2",
+      "x": 1,
+      "y": 0
+    }
+  },
+  {
+    "__type__": "cc.animation.ClipMotion",
+    "__editorExtras__": {
+      "name": "",
+      "id": "16854343812700.7141057798063706",
+      "clone": null,
+      "centerX": -224.5,
+      "centerY": 47
+    },
+    "clip": {
+      "__uuid__": "12a9d2c5-bccf-48a0-ba2b-7425bb9fae69@d10ec",
+      "__expectedType__": "cc.AnimationClip"
+    }
+  },
+  {
+    "__type__": "cc.animation.AnimationBlend2DItem",
+    "motion": {
+      "__id__": 77
+    },
+    "threshold": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    }
+  },
+  {
+    "__type__": "cc.animation.ClipMotion",
+    "__editorExtras__": {
+      "name": "",
+      "id": "16854343911250.1587244969102044",
+      "clone": null,
+      "centerX": 105.5,
+      "centerY": 93
+    },
+    "clip": {
+      "__uuid__": "919db137-ffbe-42fc-9ea9-7eec6dcd6f3b@5c2c5",
+      "__expectedType__": "cc.AnimationClip"
+    }
+  },
+  {
+    "__type__": "cc.animation.AnimationBlend2DItem",
+    "motion": {
+      "__id__": 79
+    },
+    "threshold": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 1
+    }
+  },
+  {
+    "__type__": "cc.animation.ClipMotion",
+    "__editorExtras__": {
+      "name": "",
+      "id": "16854343961370.7361675659644555",
+      "clone": null,
+      "centerX": 52.5,
+      "centerY": -129
+    },
+    "clip": {
+      "__uuid__": "bc5c08dc-870f-4a9d-8ac5-1b04098f32a4@123c6",
+      "__expectedType__": "cc.AnimationClip"
+    }
+  },
+  {
+    "__type__": "cc.animation.BindableNumber",
+    "variable": "walk_run",
+    "value": 0
+  },
+  {
+    "__type__": "cc.animation.BindableNumber",
+    "variable": "stride",
+    "value": 0
+  },
+  {
+    "__type__": "cc.animation.MotionSyncInfo",
+    "group": ""
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodeShell",
+    "__editorExtras__": null,
+    "_bindings": [
+      {
+        "__id__": 84
+      }
+    ]
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodeInputBinding",
+    "_inputPath": [
+      "pose"
+    ],
+    "_producer": {
+      "__id__": 70
+    },
+    "_outputIndex": 0
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodeShell",
+    "__editorExtras__": null,
+    "_bindings": []
+  },
+  {
+    "__type__": "cc.animation.PoseGraphStash",
+    "__editorExtras__": null,
+    "graph": {
+      "__id__": 87
+    }
+  },
+  {
+    "__type__": "cc.animation.PoseGraph",
+    "__editorExtras__": null,
+    "_outputNode": {
+      "__id__": 88
+    },
+    "_nodes": [
+      {
+        "__id__": 88
+      },
+      {
+        "__id__": 89
+      }
+    ],
+    "_shells": [
+      {
+        "__id__": 102
+      },
+      {
+        "__id__": 104
+      }
+    ]
+  },
+  {
+    "__type__": "cc.animation.PoseGraphOutputNode",
+    "__editorExtras__": {
+      "centerX": 0,
+      "centerY": 0
+    },
+    "pose": null
+  },
+  {
+    "__type__": "cc.animation.PoseNodePlayMotion",
+    "__editorExtras__": {
+      "centerX": -253.5,
+      "centerY": -122
+    },
+    "motion": {
+      "__id__": 90
+    },
+    "syncInfo": {
+      "__id__": 101
+    },
+    "speedMultiplier": 1
+  },
+  {
+    "__type__": "cc.animation.AnimationBlend2D",
+    "__editorExtras__": {
+      "name": "",
+      "id": "16854330267650.4207048862921605",
+      "clone": null,
+      "centerX": 0,
+      "centerY": 0,
+      "viewport": {
+        "scale": 0.9956,
+        "top": -14.45845931490781,
+        "left": -106.17853464210131
+      }
+    },
+    "name": "",
+    "_items": [
+      {
+        "__id__": 91
+      },
+      {
+        "__id__": 93
+      },
+      {
+        "__id__": 95
+      },
+      {
+        "__id__": 97
+      }
+    ],
+    "paramX": {
+      "__id__": 99
+    },
+    "paramY": {
+      "__id__": 100
+    },
+    "_algorithm": 0
+  },
+  {
+    "__type__": "cc.animation.AnimationBlend2DItem",
+    "motion": {
+      "__id__": 92
+    },
+    "threshold": {
+      "__type__": "cc.Vec2",
+      "x": 1,
+      "y": 0
+    }
+  },
+  {
+    "__type__": "cc.animation.ClipMotion",
+    "__editorExtras__": {
+      "name": "",
+      "id": "16854330619130.9534836374258195",
+      "clone": null,
+      "centerX": -201.5,
+      "centerY": -76
+    },
+    "clip": {
+      "__uuid__": "205c17d2-cfc2-4d14-aacf-0ae87ddeaf4d@1a2f5",
+      "__expectedType__": "cc.AnimationClip"
+    }
+  },
+  {
+    "__type__": "cc.animation.AnimationBlend2DItem",
+    "motion": {
+      "__id__": 94
+    },
+    "threshold": {
+      "__type__": "cc.Vec2",
+      "x": 1,
+      "y": 1
+    }
+  },
+  {
+    "__type__": "cc.animation.ClipMotion",
+    "__editorExtras__": {
+      "name": "",
+      "id": "16854330681420.1003016857607737",
+      "clone": null,
+      "centerX": -192.5,
+      "centerY": 88
+    },
+    "clip": {
+      "__uuid__": "17a4277d-28b6-4a15-b216-bfdf28a4c1a7@6803e",
+      "__expectedType__": "cc.AnimationClip"
+    }
+  },
+  {
+    "__type__": "cc.animation.AnimationBlend2DItem",
+    "motion": {
+      "__id__": 96
+    },
+    "threshold": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    }
+  },
+  {
+    "__type__": "cc.animation.ClipMotion",
+    "__editorExtras__": {
+      "name": "",
+      "id": "16854331468140.20703361589868452",
+      "clone": null,
+      "centerX": 165.5,
+      "centerY": 164
+    },
+    "clip": {
+      "__uuid__": "a96afded-f083-4260-819c-e666f17f9ff6@5d49f",
+      "__expectedType__": "cc.AnimationClip"
+    }
+  },
+  {
+    "__type__": "cc.animation.AnimationBlend2DItem",
+    "motion": {
+      "__id__": 98
+    },
+    "threshold": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 1
+    }
+  },
+  {
+    "__type__": "cc.animation.ClipMotion",
+    "__editorExtras__": {
+      "name": "",
+      "id": "16854331581430.9208429786689536",
+      "clone": null,
+      "centerX": 171.5839694656488,
+      "centerY": -90.58899156287666
+    },
+    "clip": {
+      "__uuid__": "808f31c3-855c-47a9-af63-fccd41cc186c@624ab",
+      "__expectedType__": "cc.AnimationClip"
+    }
+  },
+  {
+    "__type__": "cc.animation.BindableNumber",
+    "variable": "walk_run",
+    "value": 0
+  },
+  {
+    "__type__": "cc.animation.BindableNumber",
+    "variable": "stride",
+    "value": 0
+  },
+  {
+    "__type__": "cc.animation.MotionSyncInfo",
+    "group": ""
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodeShell",
+    "__editorExtras__": null,
+    "_bindings": [
+      {
+        "__id__": 103
+      }
+    ]
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodeInputBinding",
+    "_inputPath": [
+      "pose"
+    ],
+    "_producer": {
+      "__id__": 89
+    },
+    "_outputIndex": 0
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodeShell",
+    "__editorExtras__": null,
+    "_bindings": []
+  },
+  {
+    "__type__": "cc.animation.PoseGraphStash",
+    "__editorExtras__": null,
+    "graph": {
+      "__id__": 106
+    }
+  },
+  {
+    "__type__": "cc.animation.PoseGraph",
+    "__editorExtras__": {
+      "viewport": {
+        "scale": 1,
+        "top": 0,
+        "left": 0
+      }
+    },
+    "_outputNode": {
+      "__id__": 107
+    },
+    "_nodes": [
+      {
+        "__id__": 107
+      },
+      {
+        "__id__": 108
+      }
+    ],
+    "_shells": [
+      {
+        "__id__": 121
+      },
+      {
+        "__id__": 123
+      }
+    ]
+  },
+  {
+    "__type__": "cc.animation.PoseGraphOutputNode",
+    "__editorExtras__": {
+      "centerX": 0,
+      "centerY": 0
+    },
+    "pose": null
+  },
+  {
+    "__type__": "cc.animation.PoseNodePlayMotion",
+    "__editorExtras__": {
+      "centerX": -240.5,
+      "centerY": -118
+    },
+    "motion": {
+      "__id__": 109
+    },
+    "syncInfo": {
+      "__id__": 120
+    },
+    "speedMultiplier": 1
+  },
+  {
+    "__type__": "cc.animation.AnimationBlend2D",
+    "__editorExtras__": {
+      "name": "",
+      "id": "16854349623510.11228698883823696",
+      "clone": null,
+      "centerX": 0,
+      "centerY": 0
+    },
+    "name": "",
+    "_items": [
+      {
+        "__id__": 110
+      },
+      {
+        "__id__": 112
+      },
+      {
+        "__id__": 114
+      },
+      {
+        "__id__": 116
+      }
+    ],
+    "paramX": {
+      "__id__": 118
+    },
+    "paramY": {
+      "__id__": 119
+    },
+    "_algorithm": 0
+  },
+  {
+    "__type__": "cc.animation.AnimationBlend2DItem",
+    "motion": {
+      "__id__": 111
+    },
+    "threshold": {
+      "__type__": "cc.Vec2",
+      "x": 1,
+      "y": 0
+    }
+  },
+  {
+    "__type__": "cc.animation.ClipMotion",
+    "__editorExtras__": {
+      "name": "",
+      "id": "16854349870510.8044602187490562",
+      "clone": null,
+      "centerX": -169.5,
+      "centerY": -75
+    },
+    "clip": {
+      "__uuid__": "a41606b1-ce83-4f0b-b1c4-5ba703e66e96@b3b1b",
+      "__expectedType__": "cc.AnimationClip"
+    }
+  },
+  {
+    "__type__": "cc.animation.AnimationBlend2DItem",
+    "motion": {
+      "__id__": 113
+    },
+    "threshold": {
+      "__type__": "cc.Vec2",
+      "x": 1,
+      "y": 1
+    }
+  },
+  {
+    "__type__": "cc.animation.ClipMotion",
+    "__editorExtras__": {
+      "name": "",
+      "id": "16854350057720.9737507291285896",
+      "clone": null,
+      "centerX": -169.5,
+      "centerY": 70
+    },
+    "clip": {
+      "__uuid__": "3c8b822f-2acf-416c-8f38-9039d0f2da9e@78120",
+      "__expectedType__": "cc.AnimationClip"
+    }
+  },
+  {
+    "__type__": "cc.animation.AnimationBlend2DItem",
+    "motion": {
+      "__id__": 115
+    },
+    "threshold": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    }
+  },
+  {
+    "__type__": "cc.animation.ClipMotion",
+    "__editorExtras__": {
+      "name": "",
+      "id": "16854350485320.4765824446075473",
+      "clone": null,
+      "centerX": 104.5,
+      "centerY": -97
+    },
+    "clip": {
+      "__uuid__": "d3757e2f-1164-4359-96aa-d0b9553c71f5@2848b",
+      "__expectedType__": "cc.AnimationClip"
+    }
+  },
+  {
+    "__type__": "cc.animation.AnimationBlend2DItem",
+    "motion": {
+      "__id__": 117
+    },
+    "threshold": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 1
+    }
+  },
+  {
+    "__type__": "cc.animation.ClipMotion",
+    "__editorExtras__": {
+      "name": "",
+      "id": "16854350590850.4703738666955708",
+      "clone": null,
+      "centerX": 137.5,
+      "centerY": 101
+    },
+    "clip": {
+      "__uuid__": "80914c46-711a-42f2-9152-4515423abd55@e8b29",
+      "__expectedType__": "cc.AnimationClip"
+    }
+  },
+  {
+    "__type__": "cc.animation.BindableNumber",
+    "variable": "walk_run",
+    "value": 0
+  },
+  {
+    "__type__": "cc.animation.BindableNumber",
+    "variable": "stride",
+    "value": 0
+  },
+  {
+    "__type__": "cc.animation.MotionSyncInfo",
+    "group": ""
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodeShell",
+    "__editorExtras__": null,
+    "_bindings": [
+      {
+        "__id__": 122
+      }
+    ]
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodeInputBinding",
+    "_inputPath": [
+      "pose"
+    ],
+    "_producer": {
+      "__id__": 108
+    },
+    "_outputIndex": 0
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodeShell",
+    "__editorExtras__": null,
+    "_bindings": []
+  },
+  {
+    "__type__": "cc.animation.PoseGraphStash",
+    "__editorExtras__": null,
+    "graph": {
+      "__id__": 125
+    }
+  },
+  {
+    "__type__": "cc.animation.PoseGraph",
+    "__editorExtras__": {
+      "viewport": {
+        "scale": 1,
+        "top": 0,
+        "left": 0
+      }
+    },
+    "_outputNode": {
+      "__id__": 126
+    },
+    "_nodes": [
+      {
+        "__id__": 126
+      },
+      {
+        "__id__": 127
+      },
+      {
+        "__id__": 139
+      }
+    ],
+    "_shells": [
+      {
+        "__id__": 152
+      },
+      {
+        "__id__": 154
+      },
+      {
+        "__id__": 155
+      }
+    ]
+  },
+  {
+    "__type__": "cc.animation.PoseGraphOutputNode",
+    "__editorExtras__": {
+      "centerX": 77,
+      "centerY": -1
+    },
+    "pose": null
+  },
+  {
+    "__type__": "cc.animation.PoseNodeSampleMotion",
+    "__editorExtras__": {
+      "centerX": -294.5,
+      "centerY": -17
+    },
+    "motion": {
+      "__id__": 128
+    },
+    "time": 0,
+    "useNormalizedTime": false
+  },
+  {
+    "__type__": "cc.animation.AnimationBlend2D",
+    "__editorExtras__": {
+      "name": "",
+      "id": "16854326994350.6833311044184271",
+      "clone": null,
+      "centerX": 0,
+      "centerY": 0
+    },
+    "name": "",
+    "_items": [
+      {
+        "__id__": 129
+      },
+      {
+        "__id__": 131
+      },
+      {
+        "__id__": 133
+      },
+      {
+        "__id__": 135
+      }
+    ],
+    "paramX": {
+      "__id__": 137
+    },
+    "paramY": {
+      "__id__": 138
+    },
+    "_algorithm": 0
+  },
+  {
+    "__type__": "cc.animation.AnimationBlend2DItem",
+    "motion": {
+      "__id__": 130
+    },
+    "threshold": {
+      "__type__": "cc.Vec2",
+      "x": 1,
+      "y": 0
+    }
+  },
+  {
+    "__type__": "cc.animation.ClipMotion",
+    "__editorExtras__": {
+      "name": "",
+      "id": "16854327087650.40885822488384105",
+      "clone": null,
+      "centerX": -211.5,
+      "centerY": -48
+    },
+    "clip": {
+      "__uuid__": "17589f26-8d19-4360-99b2-d4b398f8095a@54fa4",
+      "__expectedType__": "cc.AnimationClip"
+    }
+  },
+  {
+    "__type__": "cc.animation.AnimationBlend2DItem",
+    "motion": {
+      "__id__": 132
+    },
+    "threshold": {
+      "__type__": "cc.Vec2",
+      "x": 1,
+      "y": 1
+    }
+  },
+  {
+    "__type__": "cc.animation.ClipMotion",
+    "__editorExtras__": {
+      "name": "",
+      "id": "16854327204840.022744985106057936",
+      "clone": null,
+      "centerX": -249.5,
+      "centerY": 71
+    },
+    "clip": {
+      "__uuid__": "2bcdae59-4b91-4ac5-82cf-08330ba74f8a@569a8",
+      "__expectedType__": "cc.AnimationClip"
+    }
+  },
+  {
+    "__type__": "cc.animation.AnimationBlend2DItem",
+    "motion": {
+      "__id__": 134
+    },
+    "threshold": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    }
+  },
+  {
+    "__type__": "cc.animation.ClipMotion",
+    "__editorExtras__": {
+      "name": "",
+      "id": "16854327324460.23079876156024648",
+      "clone": null,
+      "centerX": -28.5,
+      "centerY": -145
+    },
+    "clip": {
+      "__uuid__": "919db137-ffbe-42fc-9ea9-7eec6dcd6f3b@5c2c5",
+      "__expectedType__": "cc.AnimationClip"
+    }
+  },
+  {
+    "__type__": "cc.animation.AnimationBlend2DItem",
+    "motion": {
+      "__id__": 136
+    },
+    "threshold": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 1
+    }
+  },
+  {
+    "__type__": "cc.animation.ClipMotion",
+    "__editorExtras__": {
+      "name": "",
+      "id": "16854327406760.575072965557134",
+      "clone": null,
+      "centerX": 14.5,
+      "centerY": 115
+    },
+    "clip": {
+      "__uuid__": "bc5c08dc-870f-4a9d-8ac5-1b04098f32a4@123c6",
+      "__expectedType__": "cc.AnimationClip"
+    }
+  },
+  {
+    "__type__": "cc.animation.BindableNumber",
+    "variable": "walk_run",
+    "value": 0
+  },
+  {
+    "__type__": "cc.animation.BindableNumber",
+    "variable": "stride",
+    "value": 0
+  },
+  {
+    "__type__": "cc.animation.PoseNodePlayMotion",
+    "__editorExtras__": {
+      "centerX": -235.5,
+      "centerY": -207
+    },
+    "motion": {
+      "__id__": 140
+    },
+    "syncInfo": {
+      "__id__": 151
+    },
+    "speedMultiplier": 1
+  },
+  {
+    "__type__": "cc.animation.AnimationBlend2D",
+    "__editorExtras__": {
+      "name": "",
+      "id": "16854351806810.9411785540182196",
+      "clone": null,
+      "centerX": 0,
+      "centerY": 0
+    },
+    "name": "",
+    "_items": [
+      {
+        "__id__": 141
+      },
+      {
+        "__id__": 143
+      },
+      {
+        "__id__": 145
+      },
+      {
+        "__id__": 147
+      }
+    ],
+    "paramX": {
+      "__id__": 149
+    },
+    "paramY": {
+      "__id__": 150
+    },
+    "_algorithm": 0
+  },
+  {
+    "__type__": "cc.animation.AnimationBlend2DItem",
+    "motion": {
+      "__id__": 142
+    },
+    "threshold": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 1
+    }
+  },
+  {
+    "__type__": "cc.animation.ClipMotion",
+    "__editorExtras__": {
+      "name": "",
+      "id": "16854352015770.31201836815185335",
+      "clone": null,
+      "centerX": -203.5,
+      "centerY": -97
+    },
+    "clip": {
+      "__uuid__": "bc5c08dc-870f-4a9d-8ac5-1b04098f32a4@123c6",
+      "__expectedType__": "cc.AnimationClip"
+    }
+  },
+  {
+    "__type__": "cc.animation.AnimationBlend2DItem",
+    "motion": {
+      "__id__": 144
+    },
+    "threshold": {
+      "__type__": "cc.Vec2",
+      "x": 1,
+      "y": 0
+    }
+  },
+  {
+    "__type__": "cc.animation.ClipMotion",
+    "__editorExtras__": {
+      "name": "",
+      "id": "16854352105910.555045508325446",
+      "clone": null,
+      "centerX": -207.5,
+      "centerY": 31
+    },
+    "clip": {
+      "__uuid__": "17589f26-8d19-4360-99b2-d4b398f8095a@54fa4",
+      "__expectedType__": "cc.AnimationClip"
+    }
+  },
+  {
+    "__type__": "cc.animation.AnimationBlend2DItem",
+    "motion": {
+      "__id__": 146
+    },
+    "threshold": {
+      "__type__": "cc.Vec2",
+      "x": 1,
+      "y": 1
+    }
+  },
+  {
+    "__type__": "cc.animation.ClipMotion",
+    "__editorExtras__": {
+      "name": "",
+      "id": "16854352291690.7092666183982597",
+      "clone": null,
+      "centerX": 84.5,
+      "centerY": -119
+    },
+    "clip": {
+      "__uuid__": "2bcdae59-4b91-4ac5-82cf-08330ba74f8a@569a8",
+      "__expectedType__": "cc.AnimationClip"
+    }
+  },
+  {
+    "__type__": "cc.animation.AnimationBlend2DItem",
+    "motion": {
+      "__id__": 148
+    },
+    "threshold": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    }
+  },
+  {
+    "__type__": "cc.animation.ClipMotion",
+    "__editorExtras__": {
+      "name": "",
+      "id": "16854352352050.8468909225478263",
+      "clone": null,
+      "centerX": 129.5,
+      "centerY": 126
+    },
+    "clip": {
+      "__uuid__": "919db137-ffbe-42fc-9ea9-7eec6dcd6f3b@5c2c5",
+      "__expectedType__": "cc.AnimationClip"
+    }
+  },
+  {
+    "__type__": "cc.animation.BindableNumber",
+    "variable": "walk_run",
+    "value": 0
+  },
+  {
+    "__type__": "cc.animation.BindableNumber",
+    "variable": "stride",
+    "value": 0
+  },
+  {
+    "__type__": "cc.animation.MotionSyncInfo",
+    "group": ""
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodeShell",
+    "__editorExtras__": null,
+    "_bindings": [
+      {
+        "__id__": 153
+      }
+    ]
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodeInputBinding",
+    "_inputPath": [
+      "pose"
+    ],
+    "_producer": {
+      "__id__": 139
+    },
+    "_outputIndex": 0
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodeShell",
+    "__editorExtras__": null,
+    "_bindings": []
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodeShell",
+    "__editorExtras__": null,
+    "_bindings": []
+  },
+  {
+    "__type__": "cc.animation.PoseGraphStash",
+    "__editorExtras__": null,
+    "graph": {
+      "__id__": 157
+    }
+  },
+  {
+    "__type__": "cc.animation.PoseGraph",
+    "__editorExtras__": {
+      "viewport": {
+        "scale": 0.9352840178072438,
+        "top": -81.89146145301835,
+        "left": 52.17963423764277
+      }
+    },
+    "_outputNode": {
+      "__id__": 158
+    },
+    "_nodes": [
+      {
+        "__id__": 158
+      },
+      {
+        "__id__": 159
+      },
+      {
+        "__id__": 160
+      },
+      {
+        "__id__": 161
+      },
+      {
+        "__id__": 162
+      },
+      {
+        "__id__": 163
+      },
+      {
+        "__id__": 164
+      },
+      {
+        "__id__": 165
+      },
+      {
+        "__id__": 166
+      },
+      {
+        "__id__": 167
+      },
+      {
+        "__id__": 168
+      },
+      {
+        "__id__": 169
+      },
+      {
+        "__id__": 170
+      },
+      {
+        "__id__": 171
+      }
+    ],
+    "_shells": [
+      {
+        "__id__": 172
+      },
+      {
+        "__id__": 174
+      },
+      {
+        "__id__": 187
+      },
+      {
+        "__id__": 188
+      },
+      {
+        "__id__": 189
+      },
+      {
+        "__id__": 190
+      },
+      {
+        "__id__": 191
+      },
+      {
+        "__id__": 192
+      },
+      {
+        "__id__": 193
+      },
+      {
+        "__id__": 194
+      },
+      {
+        "__id__": 195
+      },
+      {
+        "__id__": 196
+      },
+      {
+        "__id__": 197
+      },
+      {
+        "__id__": 198
+      }
+    ]
+  },
+  {
+    "__type__": "cc.animation.PoseGraphOutputNode",
+    "__editorExtras__": {
+      "centerX": 100.28929604628752,
+      "centerY": -68.46673095467702
+    },
+    "pose": null
+  },
+  {
+    "__type__": "cc.animation.PoseNodeBlendInProportion",
+    "__editorExtras__": {
+      "centerX": -247.68032786885252,
+      "centerY": -146.14175506268077
+    },
+    "poses": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "proportions": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "__type__": "cc.animation.PoseNodeUseStashedPose",
+    "__editorExtras__": {
+      "centerX": -537.764819091609,
+      "centerY": -152.09468822170902
+    },
+    "stashName": "walk_run_f"
+  },
+  {
+    "__type__": "cc.animation.PoseNodeUseStashedPose",
+    "__editorExtras__": {
+      "centerX": -539.5014841489885,
+      "centerY": -42.39441636029443
+    },
+    "stashName": "walk_run_b"
+  },
+  {
+    "__type__": "cc.animation.PoseNodeUseStashedPose",
+    "__editorExtras__": {
+      "centerX": -538.5371639946973,
+      "centerY": -116.64706824071891
+    },
+    "stashName": "walk_run_rf"
+  },
+  {
+    "__type__": "cc.animation.PoseNodeUseStashedPose",
+    "__editorExtras__": {
+      "centerX": -539.5014841489884,
+      "centerY": -10.571851268684043
+    },
+    "stashName": "walk_run_rb"
+  },
+  {
+    "__type__": "cc.animation.PoseNodeUseStashedPose",
+    "__editorExtras__": {
+      "centerX": -536.6085236861147,
+      "centerY": 22.215033977217672
+    },
+    "stashName": "walk_run_lb"
+  },
+  {
+    "__type__": "cc.animation.PoseNodeUseStashedPose",
+    "__editorExtras__": {
+      "centerX": -535.6442035318236,
+      "centerY": -77.10994191477863
+    },
+    "stashName": "walk_run_lf"
+  },
+  {
+    "__type__": "cc.animation.PVNodeGetVariableFloat",
+    "__editorExtras__": {
+      "centerX": -523.0668552001491,
+      "centerY": 63.86835496224171
+    },
+    "variableName": "move_f"
+  },
+  {
+    "__type__": "cc.animation.PVNodeGetVariableFloat",
+    "__editorExtras__": {
+      "centerX": -524.049173471269,
+      "centerY": 96.28485790919649
+    },
+    "variableName": "move_rf"
+  },
+  {
+    "__type__": "cc.animation.PVNodeGetVariableFloat",
+    "__editorExtras__": {
+      "centerX": -523.066855200149,
+      "centerY": 127.71904258503156
+    },
+    "variableName": "move_lf"
+  },
+  {
+    "__type__": "cc.animation.PVNodeGetVariableFloat",
+    "__editorExtras__": {
+      "centerX": -520.1199003867895,
+      "centerY": 161.11786380310627
+    },
+    "variableName": "move_b"
+  },
+  {
+    "__type__": "cc.animation.PVNodeGetVariableFloat",
+    "__editorExtras__": {
+      "centerX": -522.0845369290292,
+      "centerY": 192.5520484789413
+    },
+    "variableName": "move_rb"
+  },
+  {
+    "__type__": "cc.animation.PVNodeGetVariableFloat",
+    "__editorExtras__": {
+      "centerX": -516.1906273023102,
+      "centerY": 226.93318796813583
+    },
+    "variableName": "move_lb"
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodeShell",
+    "__editorExtras__": null,
+    "_bindings": [
+      {
+        "__id__": 173
+      }
+    ]
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodeInputBinding",
+    "_inputPath": [
+      "pose"
+    ],
+    "_producer": {
+      "__id__": 159
+    },
+    "_outputIndex": 0
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodeShell",
+    "__editorExtras__": null,
+    "_bindings": [
+      {
+        "__id__": 175
+      },
+      {
+        "__id__": 176
+      },
+      {
+        "__id__": 177
+      },
+      {
+        "__id__": 178
+      },
+      {
+        "__id__": 179
+      },
+      {
+        "__id__": 180
+      },
+      {
+        "__id__": 181
+      },
+      {
+        "__id__": 182
+      },
+      {
+        "__id__": 183
+      },
+      {
+        "__id__": 184
+      },
+      {
+        "__id__": 185
+      },
+      {
+        "__id__": 186
+      }
+    ]
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodeInputBinding",
+    "_inputPath": [
+      "poses",
+      0
+    ],
+    "_producer": {
+      "__id__": 160
+    },
+    "_outputIndex": 0
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodeInputBinding",
+    "_inputPath": [
+      "poses",
+      3
+    ],
+    "_producer": {
+      "__id__": 161
+    },
+    "_outputIndex": 0
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodeInputBinding",
+    "_inputPath": [
+      "poses",
+      4
+    ],
+    "_producer": {
+      "__id__": 163
+    },
+    "_outputIndex": 0
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodeInputBinding",
+    "_inputPath": [
+      "poses",
+      5
+    ],
+    "_producer": {
+      "__id__": 164
+    },
+    "_outputIndex": 0
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodeInputBinding",
+    "_inputPath": [
+      "poses",
+      1
+    ],
+    "_producer": {
+      "__id__": 162
+    },
+    "_outputIndex": 0
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodeInputBinding",
+    "_inputPath": [
+      "poses",
+      2
+    ],
+    "_producer": {
+      "__id__": 165
+    },
+    "_outputIndex": 0
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodeInputBinding",
+    "_inputPath": [
+      "proportions",
+      0
+    ],
+    "_producer": {
+      "__id__": 166
+    },
+    "_outputIndex": 0
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodeInputBinding",
+    "_inputPath": [
+      "proportions",
+      1
+    ],
+    "_producer": {
+      "__id__": 167
+    },
+    "_outputIndex": 0
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodeInputBinding",
+    "_inputPath": [
+      "proportions",
+      2
+    ],
+    "_producer": {
+      "__id__": 168
+    },
+    "_outputIndex": 0
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodeInputBinding",
+    "_inputPath": [
+      "proportions",
+      3
+    ],
+    "_producer": {
+      "__id__": 169
+    },
+    "_outputIndex": 0
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodeInputBinding",
+    "_inputPath": [
+      "proportions",
+      4
+    ],
+    "_producer": {
+      "__id__": 170
+    },
+    "_outputIndex": 0
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodeInputBinding",
+    "_inputPath": [
+      "proportions",
+      5
+    ],
+    "_producer": {
+      "__id__": 171
+    },
+    "_outputIndex": 0
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodeShell",
+    "__editorExtras__": null,
+    "_bindings": []
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodeShell",
+    "__editorExtras__": null,
+    "_bindings": []
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodeShell",
+    "__editorExtras__": null,
+    "_bindings": []
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodeShell",
+    "__editorExtras__": null,
+    "_bindings": []
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodeShell",
+    "__editorExtras__": null,
+    "_bindings": []
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodeShell",
+    "__editorExtras__": null,
+    "_bindings": []
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodeShell",
+    "__editorExtras__": null,
+    "_bindings": []
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodeShell",
+    "__editorExtras__": null,
+    "_bindings": []
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodeShell",
+    "__editorExtras__": null,
+    "_bindings": []
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodeShell",
+    "__editorExtras__": null,
+    "_bindings": []
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodeShell",
+    "__editorExtras__": null,
+    "_bindings": []
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodeShell",
+    "__editorExtras__": null,
+    "_bindings": []
+  },
+  {
+    "__type__": "cc.animation.PlainVariable",
+    "_type": 0,
+    "_value": 0
+  },
+  {
+    "__type__": "cc.animation.PlainVariable",
+    "_type": 0,
+    "_value": 0
+  },
+  {
+    "__type__": "cc.animation.PlainVariable",
+    "_type": 0,
+    "_value": 0
+  },
+  {
+    "__type__": "cc.animation.PlainVariable",
+    "_type": 0,
+    "_value": 0
+  },
+  {
+    "__type__": "cc.animation.PlainVariable",
+    "_type": 0,
+    "_value": 0
+  },
+  {
+    "__type__": "cc.animation.PlainVariable",
+    "_type": 0,
+    "_value": 0
+  },
+  {
+    "__type__": "cc.animation.PlainVariable",
+    "_type": 0,
+    "_value": 0
+  },
+  {
+    "__type__": "cc.animation.PlainVariable",
+    "_type": 0,
+    "_value": 0
+  },
+  {
+    "__type__": "cc.animation.TriggerVariable",
+    "_flags": 0
+  }
+]

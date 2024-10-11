@@ -1,0 +1,50 @@
+{
+    "package_version": 2,
+    "version": "1.0.0",
+    "name": "csv_to_json",
+    "description": "csv_to_json",
+    "main": "./dist/main.js",
+    "devDependencies": {
+        "@types/node": "^16.0.1",
+        "typescript": "^4.3.4"
+    },
+    "author": "hooper",
+    "editor": ">=3.4.2",
+    "scripts": {
+        "build": "tsc -b",
+        "watch": "tsc -w"
+    },
+    "contributions": {
+        "menu": [
+            {
+                "path": "i18n:menu.extension",
+                "label": "csv_to_json",
+                "message": "openPanel"
+            }
+        ],
+        "messages": {
+            "openPanel": {
+                "public": true,
+                "description": "打开面板",
+                "methods": [
+                    "openPanel"
+                ]
+            }
+        }
+    },
+    "panels": {
+        "default": {
+            "title": "csv转json",
+            "main": "./panel/index.js",
+            "type": "dockable",
+            "flags": {
+                "resizable": false,
+                "save": false
+            },
+            "size": {
+                "width": 700,
+                "height": 500
+            }
+        }
+    }
+}

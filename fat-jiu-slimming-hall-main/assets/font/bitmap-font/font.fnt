@@ -1,0 +1,16 @@
+info face="face" size=100
+common lineHeight=100 scaleW=406 scaleH=304 pages=1
+page id=0 file="font.png"
+chars count=12
+char id=48 x=0 y=0 width=100 height=100 xoffset=0 yoffset=0 xadvance=100 page=0 chnl=15
+char id=49 x=102 y=0 width=100 height=100 xoffset=0 yoffset=0 xadvance=100 page=0 chnl=15
+char id=50 x=0 y=102 width=100 height=100 xoffset=0 yoffset=0 xadvance=100 page=0 chnl=15
+char id=51 x=102 y=102 width=100 height=100 xoffset=0 yoffset=0 xadvance=100 page=0 chnl=15
+char id=52 x=204 y=0 width=100 height=100 xoffset=0 yoffset=0 xadvance=100 page=0 chnl=15
+char id=53 x=204 y=102 width=100 height=100 xoffset=0 yoffset=0 xadvance=100 page=0 chnl=15
+char id=54 x=0 y=204 width=100 height=100 xoffset=0 yoffset=0 xadvance=100 page=0 chnl=15
+char id=55 x=102 y=204 width=100 height=100 xoffset=0 yoffset=0 xadvance=100 page=0 chnl=15
+char id=56 x=204 y=204 width=100 height=100 xoffset=0 yoffset=0 xadvance=100 page=0 chnl=15
+char id=57 x=306 y=0 width=100 height=100 xoffset=0 yoffset=0 xadvance=100 page=0 chnl=15
+char id=58 x=306 y=102 width=100 height=100 xoffset=0 yoffset=0 xadvance=100 page=0 chnl=15
+char id=47 x=306 y=204 width=100 height=100 xoffset=0 yoffset=0 xadvance=100 page=0 chnl=15
